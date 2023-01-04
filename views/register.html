@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>Bienvenidos a Mercado Liebre</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="logo"> 
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                </div>
+                <div class="form" action="#" method="GET">
+                    <div class="input">Buscar productos, marcas y más</div>
+                    <div class="submit"><i class="fa fa-search"></i></div>
+                </div>
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <nav>
+                <ul class="izquierda">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="derecha">
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        </header>
+        <main class="register">
+            <form action="/" autocomplete="off">
+                <input type="text" name="name" placeholder="Nombre y apellido">
+                <br>
+                <br>
+                <input type="text" name="user" placeholder="Nombre de usuario">
+                <br>
+                <br>
+                <input type="email" name="email" placeholder="E-mail">
+                <br>
+                <br>
+                <h4>Fecha de nacimiento</h4>
+                <br>
+                <input type="date" name="birth_date" id="birth_date">
+                <br>
+                <br>
+                <input type="text" name="addres" placeholder="Domicilio">
+                <br>
+                <br>
+                <h4>Perfil del usuario</h4>
+                <br>
+                <div class="profile">
+                    <input type="radio" name="profile" value="buy" id="buy">
+                    <label for="buy">Comprador</label>
+                    <br>
+                    <input type="radio" name="profile" value="sell" id="sell">
+                    <label for="sell">Vendedor</label>
+                </div>
+                <br>
+                <h4>Intereses</h4>
+                <br>
+                <select class="interests">
+                    <option value="electro">Electro</option>
+                    <option value="moda">Moda</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="jugueteria">Jugueteria</option>
+                    <option value="vidasana">Vida Sana</option>
+                </select>
+                <br>
+                <br>
+                <h4>Elegí tu foto de usuario</h4>
+                <br>
+                <input type="file" name="avatar">
+                <br>
+                <br>
+                <input type="password" name="pass" placeholder="Elegí tu contraseña">
+                <br>
+                <br>
+                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                <br>
+                <br>
+                <a href="/"><button class="sumit">Enviar</button></a>
+                <button type="reset">Borrar</button>
+                <br>
+                <br>
+            </form>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
